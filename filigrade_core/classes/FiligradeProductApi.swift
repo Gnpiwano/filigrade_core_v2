@@ -46,7 +46,7 @@ open class FiligradeProductApi {
             switch response?.statusCode {
             case 200:
                 if let data = data, let image = UIImage(data: data ) {
-                    handler(.success(image))
+                    handler(.success(image, payload: watermark, colorId: colorId))
                 } else {
                     handler(.unableToParseImage);
                     return
@@ -111,7 +111,7 @@ public enum GETProductResponse {
 }
 
 public enum GETProductImage {
-    case success(UIImage)
+    case success(UIImage, payload: String, colorId: String)
     case dataNotFound(responseCode: Int = 404)
     case unknownApplicationResponse(responseCode: Int = 400)
     case unableToParseImage
