@@ -108,14 +108,10 @@
 		D5189B35235E2CAD0066E89A /* filigrade_core */ = {
 			isa = PBXGroup;
 			children = (
+				D53440392366FA0100CCA634 /* classes */,
 				D5189B70235F08CA0066E89A /* models */,
 				D5189B36235E2CAD0066E89A /* filigrade_core.h */,
 				D5189B37235E2CAD0066E89A /* Info.plist */,
-				D53440372366F62B00CCA634 /* FiligradeApiConfig.swift */,
-				D534402C2366F57400CCA634 /* FiligradeApiRequestHeaderFactory.swift */,
-				D534402B2366F57400CCA634 /* FiligradeProductApi.swift */,
-				D53440292366F57400CCA634 /* FiligradeRegisterApi.swift */,
-				D534402A2366F57400CCA634 /* FiligradeRequestHandler.swift */,
 			);
 			path = filigrade_core;
 			sourceTree = "<group>";
@@ -150,6 +146,18 @@
 				D53440312366F58300CCA634 /* Product.swift */,
 			);
 			path = models;
+			sourceTree = "<group>";
+		};
+		D53440392366FA0100CCA634 /* classes */ = {
+			isa = PBXGroup;
+			children = (
+				D53440372366F62B00CCA634 /* FiligradeApiConfig.swift */,
+				D534402C2366F57400CCA634 /* FiligradeApiRequestHeaderFactory.swift */,
+				D534402B2366F57400CCA634 /* FiligradeProductApi.swift */,
+				D53440292366F57400CCA634 /* FiligradeRegisterApi.swift */,
+				D534402A2366F57400CCA634 /* FiligradeRequestHandler.swift */,
+			);
+			path = classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

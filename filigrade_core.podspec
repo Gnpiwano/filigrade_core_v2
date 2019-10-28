@@ -92,7 +92,7 @@ Pod::Spec.new do |spec|
   #
 
   # spec.source_files  = "Classes", "Classes/**/*.{h,m}"
-  spec.source_files  = "filigrade_core/**/*", "filigrade_core/models/**/*"
+  spec.source_files  = "filigrade_core/classes/**/*", "filigrade_core/models/**/*"
   spec.exclude_files = "Classes/Exclude"
   spec.swift_version = '5	'
 
