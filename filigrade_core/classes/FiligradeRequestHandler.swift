@@ -37,7 +37,10 @@ open class FiligradeRequestHandler {
         
         let task = session.dataTask(with: request, completionHandler: { data, response, error in
             print(data, response as? HTTPURLResponse, error)
-            handler(data, response as? HTTPURLResponse, error)
+            
+            DispatchQueue.main.async {
+                handler(data, response as? HTTPURLResponse, error)
+            }
         })
         
         task.resume()
