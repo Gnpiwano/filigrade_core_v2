@@ -99,6 +99,7 @@ public struct Product: Codable {
         } else {
             self.templateIds = []
             self.watermarkId = ""
+            self.colorIds = []
         }
     }
 }
