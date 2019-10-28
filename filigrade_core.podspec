@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "filigrade_core"
-  spec.version      = "0.0.2"
+  spec.version      = "0.0.3"
   spec.summary      = "A short description of filigrade_core."
 
   # This description is used to generate tags and improve search results.
@@ -92,7 +92,7 @@ Pod::Spec.new do |spec|
   #
 
   # spec.source_files  = "Classes", "Classes/**/*.{h,m}"
-  spec.source_files  = "filigrade_core/classes/**/*", "filigrade_core/models/**/*"
+  spec.source_files  = "filigrade_core/**/*", "filigrade_core/models/**/*"
   spec.exclude_files = "Classes/Exclude"
   spec.swift_version = '5	'
 
