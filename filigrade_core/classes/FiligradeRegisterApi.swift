@@ -34,7 +34,7 @@ open class FiligradeRegisterApi {
         registrationData: DeviceRegistrationBody,
         handler: @escaping ((PutRegistrationResponse) -> Void)) {
         
-        let path = "/register/" + deviceIdentifier
+        let path = "/register/" + deviceIdentifier + "/"
         let params = preauth ? ["preauth": "true"] : [:]
         let body = registrationData.getHttpBody()
         

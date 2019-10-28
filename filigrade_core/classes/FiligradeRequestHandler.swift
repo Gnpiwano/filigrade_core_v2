@@ -33,6 +33,8 @@ open class FiligradeRequestHandler {
         
         if method != .get {
             request.httpBody = try? JSONSerialization.data(withJSONObject: body, options: .prettyPrinted)
+        } else {
+            request.httpBody = nil
         }
         
         let task = session.dataTask(with: request, completionHandler: { data, response, error in
