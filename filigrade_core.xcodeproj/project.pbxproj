@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D50497512361ADE400433A6B /* FiligradeRegisterApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = D50497502361ADE400433A6B /* FiligradeRegisterApi.swift */; };
-		D50497532361B19F00433A6B /* DeviceRegistrationBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = D50497522361B19F00433A6B /* DeviceRegistrationBody.swift */; };
 		D5189B3D235E2CAD0066E89A /* filigrade_core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5189B33235E2CAD0066E89A /* filigrade_core.framework */; };
 		D5189B42235E2CAD0066E89A /* filigrade_coreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5189B41235E2CAD0066E89A /* filigrade_coreTests.swift */; };
 		D5189B44235E2CAD0066E89A /* filigrade_core.h in Headers */ = {isa = PBXBuildFile; fileRef = D5189B36235E2CAD0066E89A /* filigrade_core.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -18,11 +16,13 @@
 		D5189B5B235E2D1F0066E89A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5189B59235E2D1F0066E89A /* Main.storyboard */; };
 		D5189B5D235E2D200066E89A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5189B5C235E2D200066E89A /* Assets.xcassets */; };
 		D5189B60235E2D200066E89A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5189B5E235E2D200066E89A /* LaunchScreen.storyboard */; };
-		D5189B66235E2DDF0066E89A /* FiligradeRequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5189B65235E2DDF0066E89A /* FiligradeRequestHandler.swift */; };
-		D5189B68235E2DF30066E89A /* FiligradeApiConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5189B67235E2DF30066E89A /* FiligradeApiConfig.swift */; };
-		D5189B6A235E2E040066E89A /* FiligradeProductApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5189B69235E2E040066E89A /* FiligradeProductApi.swift */; };
-		D5189B6C235E2E5C0066E89A /* FiligradeApiRequestHeaderFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5189B6B235E2E5C0066E89A /* FiligradeApiRequestHeaderFactory.swift */; };
-		D5189B72235F090F0066E89A /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5189B71235F090F0066E89A /* Product.swift */; };
+		D534402D2366F57400CCA634 /* FiligradeRegisterApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53440292366F57400CCA634 /* FiligradeRegisterApi.swift */; };
+		D534402E2366F57400CCA634 /* FiligradeRequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D534402A2366F57400CCA634 /* FiligradeRequestHandler.swift */; };
+		D534402F2366F57400CCA634 /* FiligradeProductApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = D534402B2366F57400CCA634 /* FiligradeProductApi.swift */; };
+		D53440302366F57400CCA634 /* FiligradeApiRequestHeaderFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D534402C2366F57400CCA634 /* FiligradeApiRequestHeaderFactory.swift */; };
+		D53440332366F58300CCA634 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53440312366F58300CCA634 /* Product.swift */; };
+		D53440362366F5A800CCA634 /* DeviceRegistrationBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53440352366F5A800CCA634 /* DeviceRegistrationBody.swift */; };
+		D53440382366F62B00CCA634 /* FiligradeApiConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53440372366F62B00CCA634 /* FiligradeApiConfig.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,8 +36,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		D50497502361ADE400433A6B /* FiligradeRegisterApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiligradeRegisterApi.swift; sourceTree = "<group>"; };
-		D50497522361B19F00433A6B /* DeviceRegistrationBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceRegistrationBody.swift; sourceTree = "<group>"; };
 		D5189B33235E2CAD0066E89A /* filigrade_core.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = filigrade_core.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5189B36235E2CAD0066E89A /* filigrade_core.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = filigrade_core.h; sourceTree = "<group>"; };
 		D5189B37235E2CAD0066E89A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -52,11 +50,13 @@
 		D5189B5C235E2D200066E89A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D5189B5F235E2D200066E89A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D5189B61235E2D200066E89A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D5189B65235E2DDF0066E89A /* FiligradeRequestHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiligradeRequestHandler.swift; sourceTree = "<group>"; };
-		D5189B67235E2DF30066E89A /* FiligradeApiConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiligradeApiConfig.swift; sourceTree = "<group>"; };
-		D5189B69235E2E040066E89A /* FiligradeProductApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiligradeProductApi.swift; sourceTree = "<group>"; };
-		D5189B6B235E2E5C0066E89A /* FiligradeApiRequestHeaderFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiligradeApiRequestHeaderFactory.swift; sourceTree = "<group>"; };
-		D5189B71235F090F0066E89A /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		D53440292366F57400CCA634 /* FiligradeRegisterApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiligradeRegisterApi.swift; sourceTree = "<group>"; };
+		D534402A2366F57400CCA634 /* FiligradeRequestHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiligradeRequestHandler.swift; sourceTree = "<group>"; };
+		D534402B2366F57400CCA634 /* FiligradeProductApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiligradeProductApi.swift; sourceTree = "<group>"; };
+		D534402C2366F57400CCA634 /* FiligradeApiRequestHeaderFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiligradeApiRequestHeaderFactory.swift; sourceTree = "<group>"; };
+		D53440312366F58300CCA634 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		D53440352366F5A800CCA634 /* DeviceRegistrationBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceRegistrationBody.swift; sourceTree = "<group>"; };
+		D53440372366F62B00CCA634 /* FiligradeApiConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiligradeApiConfig.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,11 +111,11 @@
 				D5189B70235F08CA0066E89A /* models */,
 				D5189B36235E2CAD0066E89A /* filigrade_core.h */,
 				D5189B37235E2CAD0066E89A /* Info.plist */,
-				D5189B65235E2DDF0066E89A /* FiligradeRequestHandler.swift */,
-				D5189B67235E2DF30066E89A /* FiligradeApiConfig.swift */,
-				D5189B69235E2E040066E89A /* FiligradeProductApi.swift */,
-				D5189B6B235E2E5C0066E89A /* FiligradeApiRequestHeaderFactory.swift */,
-				D50497502361ADE400433A6B /* FiligradeRegisterApi.swift */,
+				D53440372366F62B00CCA634 /* FiligradeApiConfig.swift */,
+				D534402C2366F57400CCA634 /* FiligradeApiRequestHeaderFactory.swift */,
+				D534402B2366F57400CCA634 /* FiligradeProductApi.swift */,
+				D53440292366F57400CCA634 /* FiligradeRegisterApi.swift */,
+				D534402A2366F57400CCA634 /* FiligradeRequestHandler.swift */,
 			);
 			path = filigrade_core;
 			sourceTree = "<group>";
@@ -146,8 +146,8 @@
 		D5189B70235F08CA0066E89A /* models */ = {
 			isa = PBXGroup;
 			children = (
-				D5189B71235F090F0066E89A /* Product.swift */,
-				D50497522361B19F00433A6B /* DeviceRegistrationBody.swift */,
+				D53440352366F5A800CCA634 /* DeviceRegistrationBody.swift */,
+				D53440312366F58300CCA634 /* Product.swift */,
 			);
 			path = models;
 			sourceTree = "<group>";
@@ -293,13 +293,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D5189B6C235E2E5C0066E89A /* FiligradeApiRequestHeaderFactory.swift in Sources */,
-				D50497512361ADE400433A6B /* FiligradeRegisterApi.swift in Sources */,
-				D5189B6A235E2E040066E89A /* FiligradeProductApi.swift in Sources */,
-				D5189B72235F090F0066E89A /* Product.swift in Sources */,
-				D5189B68235E2DF30066E89A /* FiligradeApiConfig.swift in Sources */,
-				D50497532361B19F00433A6B /* DeviceRegistrationBody.swift in Sources */,
-				D5189B66235E2DDF0066E89A /* FiligradeRequestHandler.swift in Sources */,
+				D53440382366F62B00CCA634 /* FiligradeApiConfig.swift in Sources */,
+				D53440362366F5A800CCA634 /* DeviceRegistrationBody.swift in Sources */,
+				D53440332366F58300CCA634 /* Product.swift in Sources */,
+				D534402D2366F57400CCA634 /* FiligradeRegisterApi.swift in Sources */,
+				D534402E2366F57400CCA634 /* FiligradeRequestHandler.swift in Sources */,
+				D534402F2366F57400CCA634 /* FiligradeProductApi.swift in Sources */,
+				D53440302366F57400CCA634 /* FiligradeApiRequestHeaderFactory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
