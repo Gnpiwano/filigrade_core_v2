@@ -13,7 +13,7 @@ public struct DeviceRegistrationBody {
     let email: String
     let company: String
     
-    init(user: String, email: String, company: String) {
+    public init(user: String, email: String, company: String) {
         self.user = user
         self.email = email
         self.company = company
