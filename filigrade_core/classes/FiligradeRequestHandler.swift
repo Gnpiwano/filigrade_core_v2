@@ -30,6 +30,7 @@ open class FiligradeRequestHandler {
         
         var request = URLRequest(url: url)
         request.allHTTPHeaderFields = headerFactory.create(path: path, config: config)
+        request.httpMethod = method.rawValue
         
         if method != .get {
             request.httpBody = try? JSONSerialization.data(withJSONObject: body, options: .prettyPrinted)
