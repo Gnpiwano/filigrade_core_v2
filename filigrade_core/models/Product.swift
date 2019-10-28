@@ -84,7 +84,6 @@ public struct Product: Codable {
         let urlString = productDataDict["url"] as? String
         self.url = (urlString == nil) ? nil : URL(string:  urlString ?? "")
         self.payloadId = productDataDict["title"] as? String
-        self.colorIds = productDataDict["zzmatnr"] as? [String] ?? []
         self.productNumbers = productDataDict["zzmatnr"] as? [String] ?? []
         self.decorType = productDataDict["wgbez"] as? String
         self.woodgrainType = productDataDict["zzsdtxt"] as? String
@@ -96,6 +95,7 @@ public struct Product: Codable {
         if let meta = dict["Meta"] as? [String: Any] {
             self.templateIds = meta["Templates"] as? [String] ?? []
             self.watermarkId = meta["Watermark"] as? String ?? ""
+            self.colorIds = meta["Thumbnails"] as?  [String] ?? []
         } else {
             self.templateIds = []
             self.watermarkId = ""
