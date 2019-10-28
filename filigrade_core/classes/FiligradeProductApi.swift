@@ -73,10 +73,12 @@ open class FiligradeProductApi {
         }
     }
     
-    public func postVerifyProductTemplate(watermark: String, handler: @escaping ((POSTVerifyProductTemplate) -> Void)) {
+    public func postVerifyProductTemplate(watermark: String, image: UIImage, handler: @escaping ((POSTVerifyProductTemplate) -> Void)) {
         let path = "/verify/"
-        let params = ["wm": watermark, "ext": "jpg"]
-        self.handler.request(path: path, params: params, method: .post) { (data: Data?, response: HTTPURLResponse?, error: Error?) in
+        let params = ["wm": watermark, "ext": "jpeg"]
+        let body = ["image": image.jpegData(compressionQuality: 1)]
+        
+        self.handler.request(path: path, params: params, method: .post, body: body) { (data: Data?, response: HTTPURLResponse?, error: Error?) in
             
             switch response?.statusCode {
             case 200:
