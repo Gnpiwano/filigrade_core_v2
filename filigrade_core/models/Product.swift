@@ -66,13 +66,6 @@ public struct Product: Codable {
     }
     
     public init?(json dict: [String: Any]) {
-        
-        if let test = dict["Data"] {
-            if let test2 = test as? [String: Any] {
-                print(test2)
-            }
-        }
-        
         guard let productDataDict = dict["Data"] as? [String: Any] else { return nil }
         
         print(productDataDict)

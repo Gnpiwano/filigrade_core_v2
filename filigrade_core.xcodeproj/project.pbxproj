@@ -24,6 +24,7 @@
 		D53440362366F5A800CCA634 /* DeviceRegistrationBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53440352366F5A800CCA634 /* DeviceRegistrationBody.swift */; };
 		D53440382366F62B00CCA634 /* FiligradeApiConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53440372366F62B00CCA634 /* FiligradeApiConfig.swift */; };
 		D55D1FEB23686098003EF717 /* FiligradeErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D55D1FEA23686098003EF717 /* FiligradeErrorResponse.swift */; };
+		D55D1FED23687473003EF717 /* VerifyTokenResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D55D1FEC23687473003EF717 /* VerifyTokenResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		D53440352366F5A800CCA634 /* DeviceRegistrationBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceRegistrationBody.swift; sourceTree = "<group>"; };
 		D53440372366F62B00CCA634 /* FiligradeApiConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiligradeApiConfig.swift; sourceTree = "<group>"; };
 		D55D1FEA23686098003EF717 /* FiligradeErrorResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiligradeErrorResponse.swift; sourceTree = "<group>"; };
+		D55D1FEC23687473003EF717 /* VerifyTokenResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyTokenResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +149,7 @@
 				D53440352366F5A800CCA634 /* DeviceRegistrationBody.swift */,
 				D53440312366F58300CCA634 /* Product.swift */,
 				D55D1FEA23686098003EF717 /* FiligradeErrorResponse.swift */,
+				D55D1FEC23687473003EF717 /* VerifyTokenResponse.swift */,
 			);
 			path = models;
 			sourceTree = "<group>";
@@ -311,6 +314,7 @@
 				D534402E2366F57400CCA634 /* FiligradeRequestHandler.swift in Sources */,
 				D534402F2366F57400CCA634 /* FiligradeProductApi.swift in Sources */,
 				D53440302366F57400CCA634 /* FiligradeApiRequestHeaderFactory.swift in Sources */,
+				D55D1FED23687473003EF717 /* VerifyTokenResponse.swift in Sources */,
 				D55D1FEB23686098003EF717 /* FiligradeErrorResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

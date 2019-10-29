@@ -9,9 +9,9 @@
 import Foundation
 
 public struct DeviceRegistrationBody {
-    let user: String
-    let email: String
-    let company: String
+    public let user: String
+    public let email: String
+    public let company: String
     
     public init(user: String, email: String, company: String) {
         self.user = user
@@ -27,9 +27,3 @@ public struct DeviceRegistrationBody {
         ]
     }
 }
-
-/*
- "User":"Guus Iwanow",
- "Email":"g.iwanow@filigrade.com",
- "Company":"FiliGrade"
- */

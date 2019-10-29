@@ -116,9 +116,14 @@ open class FiligradeProductApi {
                     let json = try? JSONSerialization.jsonObject(with: data) as? [String: Any],
                     let token = json["Token"] as? String {
                     handler(.verificationIsInProgress(token: token))
-                } else {
-                    handler(.succes())
+                } else if
+                    let data = data,
+                    let json = try? JSONSerialization.jsonObject(with: data) as? [String: Any],
+                    let verifyData = VerifyTokenResponse(json: json) {
+                    handler(.succes(verifyData))
                     return
+                } else {
+                    handler(.genericError())
                 }
             }
             switch response?.statusCode {
@@ -203,7 +208,7 @@ public enum GETRetrieveVerificationResult {
 }
 
 public enum GETVerifyTokenResult {
-    case succes(responseCode: Int = 200, filiCode: Int = 0)
+    case succes(VerifyTokenResponse)
     case genericError(responseCode: Int = 400)
     case unkownToken(responseCode: Int = 404)
     case failedToAlign(responseCode: Int = 500, filiCode: Int = 91)

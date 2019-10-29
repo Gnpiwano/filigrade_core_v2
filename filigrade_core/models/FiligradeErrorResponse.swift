@@ -8,14 +8,7 @@
 
 import Foundation
 
-struct FiligradeErrorResponse: Decodable {
-    let error: String
-    let code: Int
+public struct FiligradeErrorResponse: Decodable {
+    public let error: String
+    public let code: Int
 }
-
-/*
- {
-     "Error": "Could not align",
-     "Code": 91
- }
- */
