@@ -15,7 +15,7 @@ public struct VerifyTokenResponse: Decodable {
     public let message: String
     
     public init?(json dict: [String: Any]) {
-        guard let verifyDataDict = dict["Data"] as? [String: Any] else { return nil }
+        guard let verifyDataDict = dict["Result"] as? [String: Any] else { return nil }
                
         self.id = verifyDataDict["Id"] as? String ?? ""
         self.IsConclusive = verifyDataDict["IsConclusive"] as? Bool ?? false
