@@ -125,12 +125,13 @@ open class FiligradeProductApi {
                 } else {
                     handler(.genericError())
                 }
-            }
-            switch response?.statusCode {
-            case 400: handler(.genericError())
-            case 404: handler(.unkownToken())
-            case 500: error?.code == 91 ? handler(.failedToAlign()) : handler(.noReferenceImageIsAvailable())
-            default: handler(.genericError())
+            } else {
+                switch response?.statusCode {
+                case 400: handler(.genericError())
+                case 404: handler(.unkownToken())
+                case 500: error?.code == 91 ? handler(.failedToAlign()) : handler(.noReferenceImageIsAvailable())
+                default: handler(.genericError())
+                }
             }
         }
     }

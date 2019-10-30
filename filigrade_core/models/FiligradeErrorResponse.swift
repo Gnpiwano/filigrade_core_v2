@@ -11,4 +11,9 @@ import Foundation
 public struct FiligradeErrorResponse: Decodable {
     public let error: String
     public let code: Int
+    
+    public init?(json dict: [String: Any]) {
+        self.error = dict["Error"] as? String ?? ""
+        self.code = dict["Code"] as? Int ?? 0
+    }
 }
