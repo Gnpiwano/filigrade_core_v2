@@ -69,7 +69,7 @@ public struct Product: Codable {
         guard let productDataDict = dict["Data"] as? [String: Any] else { return nil }
         
         print(productDataDict)
-        self.title = productDataDict["title"] as? String
+        self.title = productDataDict["maktx"] as? String
         self.subTitle = productDataDict["zzdeknr"] as? String
         self.description = productDataDict["zzdescr"] as? String
         self.identifier = productDataDict["zzdeknr"] as? String

@@ -109,7 +109,8 @@ open class FiligradeProductApi {
         let path = "/verify/" + token
         
         self.handler.request(path: path) { (data, response, error) in
-            let error = try? JSONDecoder().decode(FiligradeErrorResponse.self, from: data ?? Data())
+            let json = try? JSONSerialization.jsonObject(with: data ?? Data()) as? [String: Any]
+            let error = FiligradeErrorResponse(json: json ?? [:])
             
             if response?.statusCode == 200 {
                 if  let data = data,

@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "filigrade_core"
-  spec.version      = "0.0.17"
+  spec.version      = "0.0.18"
   spec.summary      = "A short description of filigrade_core."
 
   # This description is used to generate tags and improve search results.
